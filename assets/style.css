@@ -42,6 +42,22 @@ html {
 .projects{
     margin-top: 160px;
 }
+.refact_pic_holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#refactoring_image{
+    
+    filter: blur(3px);
+    margin:10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 14px 8px black;
+    width: 800px;
+    height: 400px;
+    
+}
 
 section h2 {
     font-size: large;
@@ -62,27 +78,10 @@ section h2 {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px ;
-    
+  
 
 }
-.refactor{
-    width: 60%;
-    height: 60%;
-    display: flex;
-    flex-basis: 100%;
-    margin: 100px;
-}
-
-.refactor_tip{
-    position: absolute;
-    bottom:20%;
-    padding: 10px; 
-    background: dimgray;
-    color: snow;
-    text-align: center;
-    visibility: hidden;
-}
-.projects img {
+.projects .project_img img {
     filter: blur(3px);
     margin:10px;
     width: 400px;
@@ -91,10 +90,15 @@ section h2 {
     box-shadow: 0px 1px 14px 8px black;
 
 }
-.projects img:hover{
+
+.projects img:hover, #refactoring_image:hover{
     filter: none;
     box-shadow: 0px 1px 14px 8px white;
 }
+
+
+
+
 .stickman {
     display: flex;
     justify-content: center;

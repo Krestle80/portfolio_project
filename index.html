@@ -12,30 +12,31 @@
         <h1>Kyle Costello's Portfolio</h1>
         <nav>
             <ul class = "nav_list">
-                <li class = "nav_tabs"><a>Projects</a></li>
-                <li class = "nav_tabs">About Me</li>
-                <li class = "nav_tabs">Contact Info</li>
+                <li class = "nav_tabs"><a href = "#top">Projects</a></li>
+                <li class = "nav_tabs" ><a href = "#about_me">About Me</a></li>
+                <li class = "nav_tabs" ><a href = "#about_me">Contact Info</a></li>
             </ul>
         </nav>
     </header>
     <!-- project photos, titles, and descriptions -->
-    <section class = "projects">
+    <section class = "projects" id = "projects">
         <h2>Projects</h2>
-        <main class = "project_img">
-            <div class = "image_container"> 
-                <a class= "refactor_tip" href= ""></a>               
-                    <img  src="assets\images\refactoring_project.png" alt="refactored Website" class = "image" id="refactoring_image" title = "This projects task was to refactor a website to make it functional while looking the same" />
+        <main>
+            <article>
+                <a href= "https://krestle80.github.io/01-homework-refactoring-horiseon/" class="refact_pic_holder" target="blank">               
+                    <img  src="assets\images\refactoring_project.png" alt="refactored Website"  id="refactoring_image" title = "This projects task was to refactor a website to make it functional while looking the same" />
                 </a>
-                </a> 
-            </div>
-            <img src="assets\images\pexels-kindel-media-7054756_calculator_fill.jpg" alt="calculator" class = "image" title = "filler" />
-            <img src="assets\images\pexels-pixabay-261857_text_editor_filler.jpg" alt="text"  class = "image" title = "filler" />
-            <img src="assets\images\pexels-artem-beliaikin-2447042_online-store.jpg" alt="store" class = "image" title = "filler" />
+            </article>
+            <article  class = "project_img"> 
+                <img src="assets\images\pexels-kindel-media-7054756_calculator_fill.jpg" alt="calculator" class = "image" title = "filler" />
+                <img src="assets\images\pexels-pixabay-261857_text_editor_filler.jpg" alt="text"  class = "image" title = "filler" />
+                <img src="assets\images\pexels-artem-beliaikin-2447042_online-store.jpg" alt="store" class = "image" title = "filler" />
+            </article>
         </main>
     </section>
     <!-- About me -->
     <section>
-        <h2>About Me</h2>
+        <h2 id = "about_me">About Me</h2>
         <a class = "stickman">
             <img src="assets\images\stickman.jpg" alt= "incredibly well drawm man" id = "stickman"  />
         </a>

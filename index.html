@@ -21,25 +21,40 @@
     <!-- project photos, titles, and descriptions -->
     <section class = "projects">
         <h2>Projects</h2>
-        <img src="assets\images\refactoring_project.png" alt="refactored Website" /> 
-        <img src="assets\images\pexels-kindel-media-7054756_calculator_fill.jpg" alt="calculator" />
-        <img src="assets\images\pexels-pixabay-261857_text_editor_filler.jpg" alt="text" />
-        <img src="assets\images\pexels-artem-beliaikin-2447042_online-store.jpg" alt="store" />
+        <main class = "project_img">
+            <div class = "image_container"> 
+                <a class= "refactor_tip" href= ""></a>               
+                    <img  src="assets\images\refactoring_project.png" alt="refactored Website" class = "image" id="refactoring_image" title = "This projects task was to refactor a website to make it functional while looking the same" />
+                </a>
+                </a> 
+            </div>
+            <img src="assets\images\pexels-kindel-media-7054756_calculator_fill.jpg" alt="calculator" class = "image" title = "filler" />
+            <img src="assets\images\pexels-pixabay-261857_text_editor_filler.jpg" alt="text"  class = "image" title = "filler" />
+            <img src="assets\images\pexels-artem-beliaikin-2447042_online-store.jpg" alt="store" class = "image" title = "filler" />
+        </main>
     </section>
     <!-- About me -->
     <section>
         <h2>About Me</h2>
-        <img src="" alt= "man" />
-        <h3>Kyle Costello</h3>
-        <h2> Bio <h2>
-            <h3> Currently training to be a full stack devloper.<h3>
+        <a class = "stickman">
+            <img src="assets\images\stickman.jpg" alt= "incredibly well drawm man" id = "stickman"  />
+        </a>
+        <h3 class = "bioheader"> Bio </h3>
+        <h3> I am Currently training to be a full stack devloper. These are some of my projects and some contact info.  <h3>
     </section>
     <section>
         <h2>Contact Me</h2>
         <ul>
-        <li> 810-834-8024 </li>
-        <li> kylec0217@gmail.com <li>
-        <li> github <li>
+            <li>
+                <a href= "tel:8108348024" class= "contact_info"> 810-834-8024</a> 
+            </li>
+            <li>
+                <a href= "mailto:kylec027@gmail.com" class= "contact_info"> kylec0217@gmail.com <a>   
+            </li>
+            <li>
+                <a href= "https://github.com/Krestle80" target="blank" class= "contact_info"> Github </a>
+            </li>
+        
         </ul>
     </section>
 </body>

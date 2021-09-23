@@ -1,5 +1,6 @@
 html {
-    background: dimgray;
+    background: rgb(132,133,132);
+    background: radial-gradient(circle, rgba(132,133,132,1) 0%, rgba(117,135,116,1) 31%, rgba(85,107,47,1) 100%);
     scroll-behavior: smooth;
 }
 
@@ -30,7 +31,7 @@ html {
     flex-wrap: nowrap;
     justify-content: space-between;
     font-size: large;
-    background: snow;
+    background: darkseagreen;
     padding: 10px;
     
     box-shadow: 5px 5px 5px black;
@@ -40,37 +41,42 @@ html {
     box-shadow: 0px 1px 14px 8px #999c00c9;
 } 
 .projects{
-    margin-top: 160px;
+    margin-top: 158px;
+    display: flex;
+    flex-direction: column;
 }
-.refact_pic_holder{
+.topPicHolder{
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width:50%;
+    flex-direction: column;
 }
-#refactoring_image{
+#topPic{
     
     filter: blur(3px);
     margin:10px;
     border-radius: 10px;
     box-shadow: 0px 1px 14px 8px black;
-    width: 800px;
+    width: 100%;
     height: 400px;
     
 }
 
 section h2 {
     font-size: large;
-    color:snow;
+    color:black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     border: 10px solid rgb(70 86 60);
+    background: gray;
 }
 
-.project_img {
+.projectImg {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -81,7 +87,7 @@ section h2 {
   
 
 }
-.projects .project_img img {
+.image{
     filter: blur(3px);
     margin:10px;
     width: 400px;
@@ -90,13 +96,47 @@ section h2 {
     box-shadow: 0px 1px 14px 8px black;
 
 }
+.descriptionTop {
+    border: 5px solid rgb(70 86 60);
+    padding: 5px;
+    background: gray;
+    width: 100%;
+    color: black;
 
-.projects img:hover, #refactoring_image:hover{
+}
+
+.bottomFix {
+    padding-bottom: 25px !important;
+}
+.projects .description {
+    border: 5px solid rgb(70 86 60);
+    padding: 5px;
+    background: gray;
+    width: 100%;
+    color: black;
+    z-index: 9;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.imagesHolder {
+    padding :5px;
+}
+
+.title {
+    color:black;
+    border:none !important;
+}
+
+.projects img:hover, #topPic:hover{
     filter: none;
     box-shadow: 0px 1px 14px 8px white;
 }
-
-
 
 
 .stickman {
@@ -113,18 +153,31 @@ section h2 {
 .bioheader {
     font-size: large;
     font-family: sans-serif;
-    color: snow;
+    color: black;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border:5px solid rgb(28, 39, 10);
+    width: 50%;
+    background: gray;
+}
 
+.bioholder {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 h3 {
     color: snow;
     font-size: small;
-    margin: 40px;
+    padding: 40px;
+    background: gray;
+    padding-left: 8%;
+    padding-right: 8%;
+    flex-wrap: nowrap;
 }
 
 section ul {
@@ -139,4 +192,26 @@ section ul {
     font-size: large;
     color: seagreen;
     
+}
+@media screen and (max-width: 768px) {
+    
+    .header {
+        font-size: 60px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column !important;
+    }
+    .nav_list {
+        flex-direction: column;
+    }
+    .nav_tabs {
+        font-size: xx-large;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectImg {
+        flex-direction: column;
+    }
 }
